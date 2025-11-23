@@ -42,11 +42,8 @@
 <body>
 
 <div class="container">
-    <h2>Olá, Loana!</h2>
-    <p>Caso não tenha nenhum compromisso marcado para dia 28/09 (sábado), 
-        aceitaria o convite para ir até o local abaixo (O não eu já tenho, se quiser recusar...): </p>
-    <p><strong>Endereço:</strong> Av. José Gulin,105 - Bacacheri, Curitiba, Brazil 82600360</p>
-    <p><strong>Horário:</strong> às 20h</p>
+    <h2>Olá, Ana Pecinha!</h2>
+    <p>Temos um combinado e seu boga é todo meu, certo? </p>
     <button class="yes" onclick="sendWhatsApp()">Sim</button>
     <button class="no" onclick="moveButton(this)">Não</button>
 </div>
@@ -58,13 +55,9 @@
         button.style.transform = `translate(${x}px, ${y}px)`;
     }
 
-    function sendWhatsApp() {
-        const message = encodeURIComponent("Infelizmente não consegui recusar, então convite aceito!");
-        const phoneNumber = "5541984452533"; // Substitua pelo seu número com código do país
-        const url = `https://wa.me/${phoneNumber}?text=${message}`;
-        window.location.href = url;
     }
 </script>
 
 </body>
 </html>
+
