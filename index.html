@@ -41,10 +41,10 @@
 </head>
 <body>
 
-<div class="container">
+<div class="container" id="mainBox">
     <h2>Olá, Ana Pecinha!</h2>
     <p>Temos um combinado e seu boga é todo meu, certo? </p>
-    <button class="yes" onclick="sendWhatsApp()">Sim</button>
+    <button class="yes" onclick="showMessage()">Sim</button>
     <button class="no" onclick="moveButton(this)">Não</button>
 </div>
 
@@ -55,9 +55,13 @@
         button.style.transform = `translate(${x}px, ${y}px)`;
     }
 
+    function showMessage() {
+        document.getElementById("mainBox").innerHTML = `
+            <h2>Eu sabia que você ia aceitar! 😏</h2>
+            <p>Agora não tem mais volta… 😳❤️</p>
+        `;
     }
 </script>
 
 </body>
 </html>
-
